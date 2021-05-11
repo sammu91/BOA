@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="INDOCS_CIDS"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="com.indocs_CIDS.tests.TC_1" value="verifyOpsReviewMakerTest;verifyOpsReviewChecker;verifyCreatePayment;verifyOpsReviewMaker2Test;verifyApprovePayment"/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="com.indocs_CIDS.tests.TC_1"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST">
+<listEntry value="verifyOpsReviewMakerTest"/>
+<listEntry value="verifyOpsReviewChecker"/>
+<listEntry value="verifyCreatePayment"/>
+<listEntry value="verifyOpsReviewMaker2Test"/>
+<listEntry value="verifyApprovePayment"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<mapAttribute key="org.testng.eclipse.PARAMETERS"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<intAttribute key="org.testng.eclipse.TYPE" value="4"/>
+</launchConfiguration>

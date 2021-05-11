@@ -1,0 +1,33 @@
+package com.indocs.o2pageobjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	
+	public LoginPage (WebDriver driver) {
+		
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	@FindBy(id="txtCompanyID")
+	private WebElement compId;
+	
+	@FindBy(id="txtUserID")
+	private WebElement userId;
+	
+	@FindBy(id="txtPassword")
+	private WebElement pwd;
+	
+	@FindBy(id="btnLogin")
+	private WebElement loginbtn;
+	
+	
+	
+
+}

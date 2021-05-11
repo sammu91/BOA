@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="179491" started-at="2020-01-30T06:12:09Z" finished-at="2020-01-30T06:15:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="179491" started-at="2020-01-30T06:12:09Z" finished-at="2020-01-30T06:15:09Z">
+      <class name="com.indocs_CIDS.tests.TC_1_TradeCycle">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="setUp" is-config="true" duration-ms="2987" started-at="2020-01-30T11:42:09Z" finished-at="2020-01-30T11:42:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="116" started-at="2020-01-30T11:42:13Z" finished-at="2020-01-30T11:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyCreatePayment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyCreatePayment" duration-ms="59984" started-at="2020-01-30T11:42:14Z" data-provider="initiatePaymentTrade_DP" finished-at="2020-01-30T11:43:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6205]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Samtest07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ben1 (GFS101)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[403.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contract]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[72447059]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatePayment -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="68" started-at="2020-01-30T11:43:14Z" finished-at="2020-01-30T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyApprovePayment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyApprovePayment" duration-ms="8048" started-at="2020-01-30T11:43:14Z" data-provider="initiatePaymentTrade_DP" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyCreatePayment" finished-at="2020-01-30T11:43:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6205]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Samtest07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ben1 (GFS101)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[403.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contract]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[72447059]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovePayment -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="45" started-at="2020-01-30T11:43:22Z" finished-at="2020-01-30T11:43:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyOpsReviewMakerTest()[pri:3, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyOpsReviewMakerTest" duration-ms="12774" started-at="2020-01-30T11:43:22Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyApprovePayment" finished-at="2020-01-30T11:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpsReviewMakerTest -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="45" started-at="2020-01-30T11:43:35Z" finished-at="2020-01-30T11:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyOpsReviewMaker2Test()[pri:4, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyOpsReviewMaker2Test" duration-ms="11994" started-at="2020-01-30T11:43:35Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyOpsReviewMakerTest" finished-at="2020-01-30T11:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpsReviewMaker2Test -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="45" started-at="2020-01-30T11:43:47Z" finished-at="2020-01-30T11:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyOpsReviewChecker()[pri:5, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyOpsReviewChecker" duration-ms="11902" started-at="2020-01-30T11:43:47Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyOpsReviewMaker2Test" finished-at="2020-01-30T11:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpsReviewChecker -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="80" started-at="2020-01-30T11:43:59Z" finished-at="2020-01-30T11:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyMakerPaymentFunding(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyMakerPaymentFunding" duration-ms="11754" started-at="2020-01-30T11:43:59Z" data-provider="initiatePaymentTrade_DP" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyOpsReviewChecker" finished-at="2020-01-30T11:44:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6205]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Samtest07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ben1 (GFS101)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[403.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contract]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[72447059]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMakerPaymentFunding -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="44" started-at="2020-01-30T11:44:11Z" finished-at="2020-01-30T11:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyCheckerPaymentFunding()[pri:7, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="verifyCheckerPaymentFunding" duration-ms="8378" started-at="2020-01-30T11:44:11Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyMakerPaymentFunding" finished-at="2020-01-30T11:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckerPaymentFunding -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="31" started-at="2020-01-30T11:44:19Z" finished-at="2020-01-30T11:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="creat_Trade_GPS(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="creat_Trade_GPS" duration-ms="913" started-at="2020-01-30T11:44:19Z" data-provider="initiatePaymentTrade_DP" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.verifyCheckerPaymentFunding" finished-at="2020-01-30T11:44:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6205]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Samtest07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ben1 (GFS101)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[403.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contract]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[72447059]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creat_Trade_GPS -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="62" started-at="2020-01-30T11:44:20Z" finished-at="2020-01-30T11:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_SDS_Maker()[pri:9, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="Verify_SDS_Maker" duration-ms="8548" started-at="2020-01-30T11:44:20Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.creat_Trade_GPS" finished-at="2020-01-30T11:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SDS_Maker -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="44" started-at="2020-01-30T11:44:29Z" finished-at="2020-01-30T11:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_SDS_Checker()[pri:10, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="Verify_SDS_Checker" duration-ms="9416" started-at="2020-01-30T11:44:29Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.Verify_SDS_Maker" finished-at="2020-01-30T11:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SDS_Checker -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="43" started-at="2020-01-30T11:44:38Z" finished-at="2020-01-30T11:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Aries_Cancelation()[pri:11, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="Verify_Aries_Cancelation" duration-ms="8176" started-at="2020-01-30T11:44:38Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.Verify_SDS_Checker" finished-at="2020-01-30T11:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Aries_Cancelation -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="46" started-at="2020-01-30T11:44:46Z" finished-at="2020-01-30T11:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Payment_Reg_Maker()[pri:12, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="Verify_Payment_Reg_Maker" duration-ms="13084" started-at="2020-01-30T11:44:46Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.Verify_Aries_Cancelation" finished-at="2020-01-30T11:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Payment_Reg_Maker -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="preCondition" is-config="true" duration-ms="43" started-at="2020-01-30T11:44:59Z" finished-at="2020-01-30T11:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Payment_Reg_Checker()[pri:13, instance:com.indocs_CIDS.tests.TC_1_TradeCycle@54a097cc]" name="Verify_Payment_Reg_Checker" duration-ms="9358" started-at="2020-01-30T11:44:59Z" depends-on-methods="com.indocs_CIDS.tests.TC_1_TradeCycle.Verify_Payment_Reg_Maker" finished-at="2020-01-30T11:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Payment_Reg_Checker -->
+      </class> <!-- com.indocs_CIDS.tests.TC_1_TradeCycle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

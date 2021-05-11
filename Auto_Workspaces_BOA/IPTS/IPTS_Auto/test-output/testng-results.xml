@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65614" started-at="2020-01-30T12:30:25Z" finished-at="2020-01-30T12:31:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65614" started-at="2020-01-30T12:30:25Z" finished-at="2020-01-30T12:31:31Z">
+      <class name="com.ipts.test.TC_2_IPTS_Cycle">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="setUp" is-config="true" duration-ms="8056" started-at="2020-01-30T18:00:25Z" finished-at="2020-01-30T18:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="2047" started-at="2020-01-30T18:00:39Z" finished-at="2020-01-30T18:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Data_Entry(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_Data_Entry" duration-ms="13899" started-at="2020-01-30T18:00:41Z" data-provider="IPTS_DATA" finished-at="2020-01-30T18:00:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Data_Entry -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="506" started-at="2020-01-30T18:00:55Z" finished-at="2020-01-30T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Data_Verification(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_Data_Verification" duration-ms="13941" started-at="2020-01-30T18:00:56Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_Data_Entry" finished-at="2020-01-30T18:01:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Data_Verification -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="114" started-at="2020-01-30T18:01:10Z" finished-at="2020-01-30T18:01:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Generate_Pay_Batch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_Generate_Pay_Batch" duration-ms="4126" started-at="2020-01-30T18:01:10Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_Data_Verification" finished-at="2020-01-30T18:01:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Generate_Pay_Batch -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="112" started-at="2020-01-30T18:01:14Z" finished-at="2020-01-30T18:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Update_OFAC_Expotr_Query(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_Update_OFAC_Expotr_Query" duration-ms="1087" started-at="2020-01-30T18:01:14Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_Generate_Pay_Batch" finished-at="2020-01-30T18:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Update_OFAC_Expotr_Query -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="120" started-at="2020-01-30T18:01:15Z" finished-at="2020-01-30T18:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_PayBat_Reg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_PayBat_Reg" duration-ms="5889" started-at="2020-01-30T18:01:15Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_Update_OFAC_Expotr_Query" finished-at="2020-01-30T18:01:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_PayBat_Reg -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="154" started-at="2020-01-30T18:01:21Z" finished-at="2020-01-30T18:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_PayBat_Checker(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_PayBat_Checker" duration-ms="4024" started-at="2020-01-30T18:01:21Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_PayBat_Reg" finished-at="2020-01-30T18:01:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_PayBat_Checker -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="preCondition" is-config="true" duration-ms="98" started-at="2020-01-30T18:01:26Z" finished-at="2020-01-30T18:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="Verify_Query_Report(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.ipts.test.TC_2_IPTS_Cycle@3a03464]" name="Verify_Query_Report" duration-ms="4958" started-at="2020-01-30T18:01:26Z" data-provider="IPTS_DATA" depends-on-methods="com.ipts.test.TC_2_IPTS_Cycle.Verify_PayBat_Checker" finished-at="2020-01-30T18:01:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref51247]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sinv021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hewlett Packard Indigo Ltd (IL20)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30/01/2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Query_Report -->
+      </class> <!-- com.ipts.test.TC_2_IPTS_Cycle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="INDOCS_CIDS"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="com.indocs_CIDS.tests.TC_1_TradeCycle" value="Verify_Aries_Cancelation;verifyOpsReviewChecker;verifyCheckerPaymentFunding;Verify_Payment_Reg_Checker;Verify_SDS_Checker;verifyOpsReviewMaker2Test;verifyCreatePayment;Verify_SDS_Maker;creat_Trade_GPS;verifyMakerPaymentFunding;verifyApprovePayment;verifyOpsReviewMakerTest;Verify_Payment_Reg_Maker"/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="com.indocs_CIDS.tests.TC_1_TradeCycle"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST">
+<listEntry value="Verify_Aries_Cancelation"/>
+<listEntry value="verifyOpsReviewChecker"/>
+<listEntry value="verifyCheckerPaymentFunding"/>
+<listEntry value="Verify_Payment_Reg_Checker"/>
+<listEntry value="Verify_SDS_Checker"/>
+<listEntry value="verifyOpsReviewMaker2Test"/>
+<listEntry value="verifyCreatePayment"/>
+<listEntry value="Verify_SDS_Maker"/>
+<listEntry value="creat_Trade_GPS"/>
+<listEntry value="verifyMakerPaymentFunding"/>
+<listEntry value="verifyApprovePayment"/>
+<listEntry value="verifyOpsReviewMakerTest"/>
+<listEntry value="Verify_Payment_Reg_Maker"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<mapAttribute key="org.testng.eclipse.PARAMETERS"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

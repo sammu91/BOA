@@ -1,0 +1,171 @@
+package com.ipts.o3features;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.Set;
+import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import com.ipts.o1generic.Calendar_Utility;
+import com.ipts.o1generic.ConfigLib;
+import com.ipts.o1generic.JDBC_Util;
+import com.ipts.o1generic.seleniumlib;
+import com.ipts.o2pageobjects.CommonPage;
+import com.ipts.o2pageobjects.HomePage;
+import com.ipts.o2pageobjects.PayableImportPage;
+import com.ipts.o2pageobjects.Payable_Reg_Page;
+
+public class IPTS_Cycle_Features {
+	WebDriver driver;
+	HomePage hp;
+	seleniumlib slib;
+	CommonPage cp;
+	Payable_Reg_Page prp;
+
+	public IPTS_Cycle_Features(WebDriver driver) {
+
+		this.driver = driver;
+		hp = new HomePage(driver);
+		slib = new seleniumlib(driver);
+		cp = new CommonPage(driver);
+		prp = new Payable_Reg_Page(driver);
+
+	}
+
+	public void verfiy_Data_Entry(String refNo) {
+
+		cp.getProcessMenu().click();
+		cp.getDataEntryMenu().click();
+		prp.getRefNoTxtField().sendKeys(refNo);
+		prp.getViewBtn().click();
+		prp.getChkBxfirst().click();
+		prp.getEditBtn().click();
+
+		slib.windowWait(driver, 2);
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> itr = window.iterator();
+		String parentWindow = itr.next();
+		String childWindow = itr.next();
+
+		driver.switchTo().window(childWindow);
+		driver.manage().window().maximize();
+		prp.getPopupOkBtn().click();
+		slib.scrrolldown();
+		slib.clickablewait(prp.getSendBtn());
+		prp.getSendBtn().click();
+		slib.alertwait();
+		System.out.println(slib.getAlertText());
+		slib.alertaccept();
+
+		driver.switchTo().window(parentWindow);
+
+	}
+
+	public void verfiy_Data_Verification(String refNo, String invNo, String amount, String BOEno, String currency) {
+		cp.getProcessMenu().click();
+		cp.getDataVerfMenu().click();
+		prp.getFilterInvNoField().sendKeys(invNo);
+
+		prp.getVerifyViewBtn().click();
+
+		driver.findElement(By.xpath("//td[contains(text(),'" + refNo + "')]/preceding-sibling::td[1]//input")).click();
+		prp.getReviewbtn().click();
+
+		slib.windowWait(driver, 2);
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> itr = window.iterator();
+		String parentWindow = itr.next();
+		String childWindow = itr.next();
+
+		driver.switchTo().window(childWindow);
+		
+		driver.manage().window().maximize();
+		
+//		slib.clickablewait(prp.getSelCurency());
+		prp.getInvoceField().sendKeys(invNo);
+		slib.selectdropdown(prp.getSelCurency(), currency);
+		prp.getAmountFld().sendKeys(amount);
+		prp.getBoeNoFld().sendKeys(BOEno);
+		prp.getAprvBtn().click();
+
+		slib.alertwait();
+		System.out.println(slib.getAlertText());
+		slib.alertaccept();
+
+		// OFAC Verify
+		driver.switchTo().window(parentWindow);
+
+		prp.getGpfRadiBtn().click();
+		prp.getFilterInvNoField().clear();
+		prp.getFilterInvNoField().sendKeys(invNo);
+		prp.getVerifyViewBtn().click();
+		driver.findElement(By.xpath("//td[contains(text(),'"+invNo+"')]/preceding-sibling::td[6]//input")).click();
+		prp.getOfacVerifyBtn().click();
+		slib.alertwait();
+		System.out.println(slib.getAlertText());
+		slib.alertaccept();
+
+	}
+	
+	public void verfiy_GeneratePaymentBatch(String refNo,String vendorName) {
+		
+		cp.getProcessMenu().click();
+		cp.getGenPayBatchMenu().click();
+		slib.selectdropdown(prp.getVendorDrpDn(), vendorName);
+		prp.getVerifyViewBtn().click();
+		driver.findElement(By.xpath("//td[contains(text(),'"+refNo+"')]/preceding-sibling::td/input")).click();
+		prp.getGenPaybatBtn().click();
+		slib.alertwait();
+		System.out.println(slib.getAlertText());
+		slib.alertaccept();
+		
+	}
+	
+	public void verfiy_OFACPayBatExport(String invNo, String date) {
+		
+		String paymentBatcrefNo=null;
+		cp.getImportExportMenu().click();
+		cp.getOFACPayBatExportMenu().click();
+		
+		
+		ResultSet rs = JDBC_Util.resultQuery("select batchreferenceno  from tx_paymentbatch where paymentbatchid IN "
+				+ "( select paymentbatchid from tx_transaction where invoicenumber = '"+invNo+"')");
+		
+		try {
+			while(rs.next()) {
+				
+				paymentBatcrefNo=rs.getString(1);
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		JDBC_Util.closeConnection();
+		
+	
+		slib.removeAttribute(prp.getDateFrom(), "onfocus");
+		
+		prp.getDateFrom().clear();
+		prp.getDateFrom().sendKeys("22/01/2020");
+		prp.getBatchRefNobtn().click();
+		slib.visiblewait(prp.getSelBatchRefNoDrpDn());
+		slib.selectdropdown(prp.getSelBatchRefNoDrpDn(), paymentBatcrefNo);
+		
+		System.out.println("paymentBatcrefNo is ::"+ paymentBatcrefNo);
+		prp.getBankRefNoField().sendKeys("bref123456");
+		
+		String avilmentNo = slib.genRandomDigit(3, 1000);
+		prp.getAvalimentField().sendKeys(avilmentNo);
+		slib.selectdropdown(prp.getSelOFACbranch(), "6216-New Delhi");
+		prp.getOfacExportBtn().click();
+		
+	}
+	
+
+}

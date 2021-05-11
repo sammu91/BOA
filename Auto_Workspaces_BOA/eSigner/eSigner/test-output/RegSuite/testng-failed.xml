@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegSuite]">
+  <test name="Test">
+    <classes>
+      <class name="com.esigner.test.TC_1_AddCategory"/>
+      <class name="com.esigner.test.TC_2_Upload_SignFile"/>
+      <class name="com.esigner.test.TC_3_AddUser"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.esigner.test.TC_2_Upload_SignFile">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_Sign_Doc" invocation-numbers="0"/>
+          <include name="verify_Downalod" invocation-numbers="0"/>
+          <include name="verify_Upload_Doc" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="verify_InvalidFile_Upload" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.esigner.test.TC_2_Upload_SignFile -->
+      <class name="com.esigner.test.TC_3_AddUser">
+        <methods>
+          <include name="verify_Add_User"/>
+        </methods>
+      </class> <!-- com.esigner.test.TC_3_AddUser -->
+      <class name="com.esigner.test.TC_1_AddCategory">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.esigner.test.TC_1_AddCategory -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RegSuite] -->

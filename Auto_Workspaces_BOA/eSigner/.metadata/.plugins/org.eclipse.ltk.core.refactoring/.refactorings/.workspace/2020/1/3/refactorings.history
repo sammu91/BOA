@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;IPTS_Auto&apos;" deleteContents="false" description="Delete resource &apos;IPTS_Auto&apos;" element1="/IPTS_Auto" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1579156305695"/>
+</session>

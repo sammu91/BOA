@@ -1,0 +1,15 @@
+1574072338426	Rename type 'AddPayment'
+1574073242912	Rename method 'initiatePayment'
+1574163106961	Rename type 'TradeFeature'
+1574166426048	Rename method 'paymentManagementPage'
+1574170717192	Rename type 'Trade_PaymentTest'
+1574170732512	Rename type 'ApprovePaymentTest'
+1574227739064	Delete element
+1574235374798	Rename package 'com.indocs.o1generic'
+1574241610505	Rename package 'com.indocs.o4features'
+1574241621741	Rename package 'com.indocs.o2pageobjects'
+1574241648881	Rename package 'com.indocs.tests'
+1574241686230	Rename package 'com.indocs_CIDS.o4features'
+1574246011368	Delete element
+1574319194548	Rename type 'OpsReviewTest'
+1574340961487	Move compilation unit

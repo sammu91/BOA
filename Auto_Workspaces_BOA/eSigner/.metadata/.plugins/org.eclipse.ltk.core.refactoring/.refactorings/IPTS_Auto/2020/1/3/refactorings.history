@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ipts.o1generic&apos; to &apos;eSigner/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;IPTS_Auto&apos;&#x0D;&#x0A;- Destination element: &apos;eSigner/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;IPTS_Auto/src/main/java/com.ipts.o1generic&apos;" description="Copy package" destination="=eSigner/src\/main\/java" element1="/src\/main\/java&lt;com.ipts.o1generic" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1579156298937" version="1.0"/>
+</session>

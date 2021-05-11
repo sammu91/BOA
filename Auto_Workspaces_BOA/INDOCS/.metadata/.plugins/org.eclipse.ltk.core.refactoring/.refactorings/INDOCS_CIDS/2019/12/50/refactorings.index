@@ -1,0 +1,26 @@
+1576149366500	Copy compilation unit
+1576229220716	Rename field 'TradeLabel'
+1576229239788	Rename method 'getTradeLabel'
+1576230744436	Copy compilation unit
+1576230845000	Delete element
+1576230860286	Copy compilation unit
+1576230885048	Rename type 'CIDS_InitiatePaymentPage_TRSRY'
+1576230902428	Rename type 'CIDS_AddPaymentPageTRSRY'
+1576231607430	Delete element
+1576233093200	Rename type 'CIDS_InitiatePaymentMaker_Features'
+1576233116747	Copy compilation unit
+1576233169410	Rename type 'CIDS_PaymentMaker_Features'
+1576233178462	Rename type 'CIDS_TRSRY_PaymentMaker_Features'
+1576233914699	Rename method 'getCRMTestData'
+1576234297755	Rename method 'addpayment'
+1576234996176	Delete element
+1576235013032	Copy compilation unit
+1576236218430	Copy compilation unit
+1576239174725	Move compilation units
+1576239961797	Rename method 'getTrademodule'
+1576240091690	Rename type 'INODCS_commonpage'
+1576240128626	Rename type 'INODCS_CommonPage'
+1576240654453	Delete element
+1576240765758	Copy compilation unit
+1576241147055	Copy compilation unit
+1576241247674	Copy compilation unit

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37323" started-at="2020-01-20T10:41:37Z" finished-at="2020-01-20T10:42:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37323" started-at="2020-01-20T10:41:37Z" finished-at="2020-01-20T10:42:14Z">
+      <class name="com.esigner.test.TCsuite">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.esigner.test.TCsuite@531be3c5]" name="initialize" is-config="true" duration-ms="6671" started-at="2020-01-20T16:11:37Z" finished-at="2020-01-20T16:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="verifyLogin()[pri:1, instance:com.esigner.test.TCsuite@531be3c5]" name="verifyLogin" duration-ms="1193" started-at="2020-01-20T16:11:44Z" finished-at="2020-01-20T16:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="verify_Add_User(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_Add_User" duration-ms="4026" started-at="2020-01-20T16:11:46Z" data-provider="eSignerUserData" finished-at="2020-01-20T16:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UC3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UN3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[UNE1@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_User -->
+        <test-method status="PASS" signature="verify_Add_Category(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_Add_Category" duration-ms="2254" started-at="2020-01-20T16:11:50Z" data-provider="eSignerData" depends-on-methods="com.esigner.test.TCsuite.verifyLogin" finished-at="2020-01-20T16:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValidFile.pdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[InavalidFile.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_Category -->
+        <test-method status="PASS" signature="verify_InvalidFile_Upload(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_InvalidFile_Upload" duration-ms="16134" started-at="2020-01-20T16:11:53Z" data-provider="eSignerData" finished-at="2020-01-20T16:12:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValidFile.pdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[InavalidFile.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_InvalidFile_Upload -->
+        <test-method status="PASS" signature="verify_Upload_Doc(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_Upload_Doc" duration-ms="2803" started-at="2020-01-20T16:12:09Z" data-provider="eSignerData" finished-at="2020-01-20T16:12:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValidFile.pdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[InavalidFile.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Upload_Doc -->
+        <test-method status="PASS" signature="verify_Sign_Doc(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_Sign_Doc" duration-ms="1797" started-at="2020-01-20T16:12:12Z" data-provider="eSignerData" finished-at="2020-01-20T16:12:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValidFile.pdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[InavalidFile.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Sign_Doc -->
+        <test-method status="PASS" signature="verify_Downalod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.esigner.test.TCsuite@531be3c5]" name="verify_Downalod" duration-ms="668" started-at="2020-01-20T16:12:14Z" data-provider="eSignerData" finished-at="2020-01-20T16:12:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cat03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValidFile.pdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[InavalidFile.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Downalod -->
+      </class> <!-- com.esigner.test.TCsuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

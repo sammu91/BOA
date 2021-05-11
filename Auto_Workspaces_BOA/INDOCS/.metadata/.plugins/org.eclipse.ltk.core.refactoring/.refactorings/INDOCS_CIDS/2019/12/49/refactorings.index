@@ -1,0 +1,62 @@
+1575271264249	Rename type 'InitiatePaymentFeature'
+1575271272554	Rename type 'LoginFeature'
+1575271281352	Rename type 'PaymentcheckerFeature'
+1575271560698	Rename type 'CommonFeatures_CIDS'
+1575271574131	Rename type 'InitiatePaymentFeature_CIDS'
+1575271584788	Rename type 'LoginFeature_CIDS'
+1575271598967	Rename type 'LoginFeature_INDOCS'
+1575271613112	Rename type 'PaymentcheckerFeature_CIDS'
+1575271775342	Rename type 'Common_CIDS_Features'
+1575271784449	Rename type 'InitiatePayment_CIDS_Features'
+1575271794604	Rename type 'Login_CIDS_Feature'
+1575271807010	Rename type 'Paymentchecker_CIDS_Feature'
+1575271816070	Rename type 'Login_INDOCS_Feature'
+1575272332773	Rename type 'Homepage_INDOCS'
+1575272348107	Rename type 'LoginPage_INDOCS'
+1575278430481	Copy compilation unit
+1575278838689	Rename type 'O1_Trade_InitiatePaymentTest'
+1575280362897	Rename type 'AddPaymentPage'
+1575280370326	Rename type 'CommonPage'
+1575280377151	Rename type 'InitiatePaymentPage'
+1575280389139	Rename type 'LoginPage_CIDS'
+1575280398120	Rename type 'PaymentCheckerPage'
+1575288432513	Rename type 'O2_Trade_ApprovePaymentTest'
+1575289378258	Rename type 'INODCS_OpsReviewApprovalPage'
+1575355025296	Copy compilation unit
+1575355661412	Rename type 'INDOCS_OpsReviewApprovalPage'
+1575355821654	Copy compilation unit
+1575356073590	Copy compilation unit
+1575356091376	Rename type 'INDOCS_OpsReviewMkr2ApprovalPage'
+1575356559915	Copy compilation unit
+1575356619483	Rename type 'INDOCS_OpsReviewerChecker_Features'
+1575356762153	Rename method 'verify_ops_Approval'
+1575356806761	Rename method 'verify_ops_Approval'
+1575357026476	Rename method 'opsReviewApproval'
+1575357052069	Rename method 'opsReviewApproval'
+1575357187378	Rename method 'checkerLogin_INODCS'
+1575371167695	Delete element
+1575371186135	Copy compilation unit
+1575371745408	Copy compilation unit
+1575372734608	Copy compilation unit
+1575372751634	Rename type 'INDOCS_OpsReviewChkr_ApprovalPage'
+1575372759486	Rename type 'INDOCS_OpsReviewmkrPage'
+1575372774569	Rename type 'INDOCS_OpsReviewMkrApprovalPage'
+1575373700244	Rename field 'orapi'
+1575373716146	Rename field 'ora2pi'
+1575442702324	Rename package 'testapp'
+1575444473724	Rename type 'CIDS_PaymentFundingMaker_Page'
+1575444595876	Rename type 'CIDS_InitiatePayment_Features'
+1575455233669	Rename method 'verifyPaymentFundingMaker'
+1575455430889	Copy compilation unit
+1575457472733	Rename type 'PaymentFunding_Page'
+1575457692600	Rename type 'CIDS_PaymentFundingMaker_Features'
+1575457704572	Rename type 'CIDS_PaymentFundingMaker_Page'
+1575457913863	Rename field 'approveBrt'
+1575463455300	Delete element
+1575463471075	Rename type 'jdbcIJ'
+1575627571653	Delete element
+1575627684838	Rename type 'TC_1'
+1575627728022	Delete element
+1575628046031	Move compilation unit
+1575635875601	Delete element
+1575635917781	Delete elements

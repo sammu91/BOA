@@ -1,0 +1,1 @@
+{"uuid":"7147369d-c171-49d0-8bd5-70a174f34d3e","name":"com.indocs.tests.LoginTest","children":["e9c9a4ea-8fd1-4807-9b53-e1af7157b7f2"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1573807420992,"stop":1573807421148}],"afters":[],"links":[],"start":1573807420913,"stop":1573807428190}

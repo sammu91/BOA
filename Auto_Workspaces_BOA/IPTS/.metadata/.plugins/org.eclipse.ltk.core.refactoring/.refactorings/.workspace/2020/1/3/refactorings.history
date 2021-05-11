@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;INDOCS_CIDS&apos;" deleteContents="false" description="Delete resource &apos;INDOCS_CIDS&apos;" element1="/INDOCS_CIDS" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1579069304782"/>
+</session>

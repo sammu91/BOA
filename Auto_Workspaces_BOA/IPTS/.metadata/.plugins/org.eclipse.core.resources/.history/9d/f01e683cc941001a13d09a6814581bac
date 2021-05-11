@@ -1,0 +1,18 @@
+package testapp;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		String s1="sumit";
+		
+		String st = new String("sumit");
+		
+		boolean flag = s1.equalsIgnoreCase(st);
+		System.out.println("flag "+flag);
+		
+		boolean flag2 = s1==st;
+		System.out.println(flag2);
+	}
+
+}

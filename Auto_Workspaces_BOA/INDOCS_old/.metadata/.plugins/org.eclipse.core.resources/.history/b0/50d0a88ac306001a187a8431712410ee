@@ -1,0 +1,33 @@
+package com.indocs.o4features;
+
+import org.openqa.selenium.WebDriver;
+
+import com.indocs.o1generic.ExcelUtilities;
+import com.indocs.o3steps.LoginSteps;
+
+public class LoginFeature {
+
+	
+	WebDriver driver;
+	LoginSteps ls;
+	ExcelUtilities eu;
+	
+	
+	public LoginFeature(WebDriver driver) {
+		
+		this.driver=driver;
+		ls= new LoginSteps(driver);
+		eu=new ExcelUtilities();
+		
+	}
+	
+	
+	public void validlogin(String compID, String userID, String pwd){
+		
+		ls.login(compID, userID, pwd);
+		
+	}
+	
+	
+	
+}

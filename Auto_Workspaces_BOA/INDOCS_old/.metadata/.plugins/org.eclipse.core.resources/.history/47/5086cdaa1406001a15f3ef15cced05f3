@@ -1,0 +1,34 @@
+package com.indocs.o3steps;
+
+import org.openqa.selenium.WebDriver;
+
+import com.indocs.o1generic.ExcelUtiil_Naveen;
+import com.indocs.o1generic.ExcelUtilities;
+import com.indocs.o2pageobjects.LoginPage;
+
+public class LoginSteps {
+
+	WebDriver driver;
+	LoginPage lp;
+	ExcelUtilities eu;
+
+	public LoginSteps(WebDriver driver) {
+
+		this.driver = driver;
+		lp = new LoginPage(driver);
+		eu=new ExcelUtilities();
+
+	}
+
+
+	
+	public void login(String compID, String userID, String pwd) {
+		
+		
+		lp.getCompId().sendKeys(compID);
+		lp.getUserId().sendKeys(userID);
+		lp.getPwd().sendKeys(pwd);
+		lp.getLoginbtn().click();
+	}
+
+}

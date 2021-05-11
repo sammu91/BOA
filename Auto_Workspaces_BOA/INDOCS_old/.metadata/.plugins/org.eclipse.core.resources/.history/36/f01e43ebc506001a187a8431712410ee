@@ -1,0 +1,22 @@
+package com.indocs.tests;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.indocs.o1generic.ConfigLib;
+import com.indocs.o1generic.ExcelUtilities;
+
+public class LoginTest {
+
+	
+	
+	@BeforeMethod
+	
+	@Test
+	public void CreateTrade() {
+		
+		ExcelUtilities eu = new ExcelUtilities(ConfigLib.dirPath+"//testdata//INDOCSTestDATA.xlsx");
+		
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BaseAbstractTest.java&apos; to &apos;INDOCS/src/test/java/com.indocs.tests&apos;&#x0D;&#x0A;- Original project: &apos;Odoo&apos;&#x0D;&#x0A;- Destination element: &apos;INDOCS/src/test/java/com.indocs.tests&apos;&#x0D;&#x0A;- Original element: &apos;com.oddocrm.scripts.BaseAbstractTest.java&apos;" description="Copy compilation unit" destination="=INDOCS/src\/test\/java&lt;com.indocs.tests" element1="/src\/test\/java&lt;com.oddocrm.scripts{BaseAbstractTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1573725253597" units="1" version="1.0"/>
+</session>

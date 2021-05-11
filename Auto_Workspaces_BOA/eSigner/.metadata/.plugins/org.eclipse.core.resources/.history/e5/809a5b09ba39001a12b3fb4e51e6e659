@@ -1,0 +1,128 @@
+package com.esigner.test;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import com.eSigner.o1generic.ConfigLib;
+import com.eSigner.o1generic.DataProviders;
+import com.eSigner.o1generic.seleniumlib;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TC_2_Upload_SignFile {
+
+	WebDriver driver;
+	seleniumlib slib;
+	WebDriverWait wait;
+
+	@BeforeClass
+	public void initialize() {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.get(ConfigLib.getValue("url"));
+		slib = new seleniumlib(driver);
+		wait = new WebDriverWait(driver, 10);
+
+	}
+
+	@AfterClass
+	public void tearDown() {
+		driver.close();
+	}
+
+	@Test(priority = 1)
+	public void verifyLogin() {
+
+		driver.findElement(By.name("username")).sendKeys(ConfigLib.getValue("un"));
+		driver.findElement(By.name("password")).sendKeys(ConfigLib.getValue("pwd"));
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+	}
+
+	@Test(priority = 2, dependsOnMethods = "verifyLogin", dataProvider = "eSignerData", dataProviderClass = DataProviders.class)
+	public void verify_Add_Category(String catName, String CatUpload, String fileName) {
+
+		driver.findElement(By.xpath("//a[contains(text(),'Categories')]")).click();
+		driver.findElement(By.id("btnNew")).click();
+		driver.findElement(By.id("NV_CATEGORY_NAME")).sendKeys(catName);
+		driver.findElement(By.id("spnButton")).click();
+
+		WebElement popupxpath = driver.findElement(By.xpath("//div[contains(text(),'saved successfully')]"));
+		wait.until(ExpectedConditions.elementToBeClickable(popupxpath));
+
+		String actualresult = popupxpath.getText();
+		System.out.println("abd  " + actualresult);
+		String expectedResult = "Record [" + catName + "] saved successfully.";
+		driver.findElement(By.xpath("//button[text()='OK']")).click();
+
+		System.out.println("actualresult" + actualresult + "::" + "expectedResult" + expectedResult);
+		Assert.assertEquals(actualresult, expectedResult);
+
+		System.out.println("Add Catgeory verified succesfully");
+
+	}
+
+	@Test(priority = 3, dataProvider = "eSignerData", dataProviderClass = DataProviders.class)
+	public void verify_Upload_Doc(String catName, String CatUpload, String fileName) {
+
+		driver.findElement(By.xpath("//span[contains(text(),'Unsigned Files')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Upload File')]")).click();
+		slib.selectdropdown(driver.findElement(By.id("DocType")), CatUpload);
+		driver.findElement(By.name("file_Uploader"))
+				.sendKeys(ConfigLib.dirPath + "\\testData\\Holiday List -2020 Delhi NCR.pdf");
+		driver.findElement(By.id("bttn_Upload")).click();
+
+		WebElement popupxpath = driver.findElement(By.xpath("//div[contains(text(),'file(s) uploaded')]"));
+		wait.until(ExpectedConditions.elementToBeClickable(popupxpath));
+
+		String actualresult = popupxpath.getText();
+		String expectedResult = "1 file(s) uploaded.";
+		Assert.assertEquals(actualresult, expectedResult);
+		driver.findElement(By.xpath("//button[text()='OK']")).click();
+		System.out.println("File uploded verified successfully");
+
+		// Assert data in unsigned table
+		String ActualFileNameFound = driver
+				.findElement(By.xpath("//td[contains(text(),'" + CatUpload + "')]/preceding-sibling::td[1]/a"))
+				.getText();
+		System.out.println(ActualFileNameFound + ":::" + fileName);
+		Assert.assertEquals(ActualFileNameFound, fileName);
+
+	}
+
+	@Test(priority = 4, dataProvider = "eSignerData", dataProviderClass = DataProviders.class)
+	public void verify_Sign_Doc(String catName, String CatUpload, String fileName) {
+
+		driver.findElement(By.xpath("//td[contains(text(),'" + CatUpload + "')]/preceding-sibling::td[2]/input"))
+				.click();
+		driver.findElement(By.id("btnSign")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Signed Files')]")).click();
+
+		// Assert data in signed table
+		String ActualFileNameFound = driver
+				.findElement(By.xpath("//td[contains(text(),'" + CatUpload + "')]/preceding-sibling::td[1]")).getText();
+		System.out.println(ActualFileNameFound + ":::" + fileName);
+		Assert.assertEquals(ActualFileNameFound, fileName);
+
+	}
+
+	@Test(priority = 5, dataProvider = "eSignerData", dataProviderClass = DataProviders.class)
+	public void verify_Downalod(String catName, String CatUpload, String fileName) {
+
+		WebElement downloadLink = driver
+				.findElement(By.xpath("//td[contains(text(),'" + CatUpload + "')]/following-sibling::td[3]/a"));
+		wait.until(ExpectedConditions.elementToBeClickable(downloadLink));
+		downloadLink.click();
+	}
+}

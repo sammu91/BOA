@@ -1,0 +1,17 @@
+package com.ipts.o1generic;
+
+import org.testng.annotations.DataProvider;
+
+public class DataProviders {
+	
+	
+	
+	@DataProvider (name="initiatePaymentTrade_DP")
+	public static Object[][] getTradeTestData()
+	{
+		Object data[][] = ExcelUtiil_Naveen.getTestData("TradeDataSheet",ConfigLib.dirPath+"\\testdata\\IN_CIDSTestDATA.xlsx");
+		return data;
+	}
+
+	
+}

@@ -1,0 +1,38 @@
+package com.indocs.o3features;
+
+import org.openqa.selenium.WebDriver;
+
+import com.indocs.o1generic.ExcelUtilities;
+import com.indocs.o2pageobjects.LoginPage;
+import com.indocs.o3steps.LoginSteps;
+
+public class LoginFeature {
+
+	
+	WebDriver driver;
+	LoginPage lp;
+	ExcelUtilities eu;
+	
+	
+	public LoginFeature(WebDriver driver) {
+		
+		this.driver=driver;
+		lp = new LoginPage(driver);
+		eu=new ExcelUtilities();
+		
+	}
+	
+	
+	public void validlogin(String compID, String userID, String pwd){
+		
+	
+		lp.getCompId().sendKeys(compID);
+		lp.getUserId().sendKeys(userID);
+		lp.getPwd().sendKeys(pwd);
+		lp.getLoginbtn().click();
+		
+	}
+	
+	
+	
+}

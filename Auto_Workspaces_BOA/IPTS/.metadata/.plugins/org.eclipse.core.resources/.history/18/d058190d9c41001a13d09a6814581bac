@@ -1,0 +1,91 @@
+package com.ipts.o1generic;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+public  class JDBC_Util {
+	
+	private  Connection con=null;
+	public static ResultSet rs=null;
+
+	
+	
+	
+// Creating connection	
+	public static Connection getCon() {
+
+		
+			try {
+
+				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//				System.out.println("1"+con);
+				
+				if (con == null) {
+				con = DriverManager.getConnection("jdbc:sqlserver://FIPLOKDB;databaseName=IPTSINDIA_IDPMS_SIT", "boauser","FsTest@123");
+				System.out.println("JDBC connection created");
+
+			}else {
+				System.out.println("connection is already created");
+			}
+				} catch (ClassNotFoundException | SQLException e) {
+				System.out.println(e);
+					e.printStackTrace();
+				
+			}
+			
+		return con;
+
+	}
+
+	
+// Update query
+	
+	public static void updateQuery(String query) {
+		
+		
+		try {
+			getCon().createStatement().executeUpdate(query);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+// 	GetResult Query
+	
+	public static ResultSet resultQuery(String query) {
+		
+		
+		try {
+			rs= getCon().createStatement().executeQuery(query);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return rs;
+		
+	}
+
+	
+	
+	
+// Close Connection	
+	public static void closeConnection() {
+		
+		try {
+			con.close();
+			System.out.println("JDBC connection closed");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("close con exception"+e.getMessage());
+		}
+	}
+
+// close Rs	
+}

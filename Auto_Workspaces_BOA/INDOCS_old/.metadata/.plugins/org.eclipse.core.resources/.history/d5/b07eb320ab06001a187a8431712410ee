@@ -1,0 +1,30 @@
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class test1 {
+
+	@DataProvider(name="SearchProvider")
+    public Object[][] getDataFromDataprovider(){
+    return new Object[][] 
+    	{
+            { "Guru99", "India" },
+            { "Krishna", "UK" },
+            { "Bhupesh", "USA" }
+        };
+	}
+	
+        
+        
+        
+	 @Test(dataProvider="SearchProvider")
+	 
+	 public void test(String author,String searchKey) {
+		 
+		 
+		 System.out.println("author : "+ author);
+		 System.out.println("author : "+ searchKey);
+		 
+	 }
+	 
+	 
+}

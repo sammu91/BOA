@@ -1,0 +1,5 @@
+2019-11-15 13:08:58,625 [main] INFO com.indocs.o1generic.TestNgListener - Suite execution starts Fri Nov 15 13:08:58 IST 2019
+2019-11-15 13:08:59,623 [main] INFO com.indocs.o1generic.TestNgListener - CreateTrade script execution starts Fri Nov 15 13:08:59 IST 2019
+2019-11-15 13:08:59,643 [main] INFO com.indocs.o1generic.TestNgListener - CreateTrade script is skipped
+2019-11-15 13:08:59,747 [main] INFO com.indocs.o1generic.TestNgListener - Suite Execution ends Fri Nov 15 13:08:59 IST 2019
+2019-11-15 13:08:59,751 [main] INFO com.indocs.o1generic.TestNgListener - Total execution time: 1.0seconds

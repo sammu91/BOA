@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="730" started-at="2020-01-20T13:42:55Z" finished-at="2020-01-20T13:42:56Z">
+    <groups>
+      <group name="smoke">
+        <method signature="GroupTest.tc1()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc1" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc2()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc2" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc3()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc3" class="testNGTest.GroupTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="730" started-at="2020-01-20T13:42:55Z" finished-at="2020-01-20T13:42:56Z">
+      <class name="testNGTest.GroupTest">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc1" duration-ms="210" started-at="2020-01-20T13:42:55Z" finished-at="2020-01-20T13:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="tc2()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc2" duration-ms="4" started-at="2020-01-20T13:42:56Z" finished-at="2020-01-20T13:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method status="PASS" signature="tc3()[pri:0, instance:testNGTest.GroupTest@75c9e76b]" name="tc3" duration-ms="5" started-at="2020-01-20T13:42:56Z" finished-at="2020-01-20T13:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+      </class> <!-- testNGTest.GroupTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

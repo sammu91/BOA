@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="936" started-at="2020-01-20T12:28:38Z" finished-at="2020-01-20T12:28:39Z">
+    <groups>
+      <group name="reg">
+        <method signature="GroupTest.tc7()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc7" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc8()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc8" class="testNGTest.GroupTest"/>
+      </group> <!-- reg -->
+      <group name="smoke">
+        <method signature="GroupTest.tc1()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc1" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc2()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc2" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc3()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc3" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc7()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc7" class="testNGTest.GroupTest"/>
+        <method signature="GroupTest.tc8()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc8" class="testNGTest.GroupTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="936" started-at="2020-01-20T12:28:38Z" finished-at="2020-01-20T12:28:39Z">
+      <class name="testNGTest.GroupTest">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc1" duration-ms="316" started-at="2020-01-20T17:58:38Z" finished-at="2020-01-20T17:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="tc2()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc2" duration-ms="6" started-at="2020-01-20T17:58:39Z" finished-at="2020-01-20T17:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method status="PASS" signature="tc3()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc3" duration-ms="12" started-at="2020-01-20T17:58:39Z" finished-at="2020-01-20T17:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method status="PASS" signature="tc7()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc7" duration-ms="8" started-at="2020-01-20T17:58:39Z" finished-at="2020-01-20T17:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc7 -->
+        <test-method status="PASS" signature="tc8()[pri:0, instance:testNGTest.GroupTest@52d239ba]" name="tc8" duration-ms="7" started-at="2020-01-20T17:58:39Z" finished-at="2020-01-20T17:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc8 -->
+      </class> <!-- testNGTest.GroupTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegSuite" >
+  <test name="Test">
+    <classes>
+      <class name="com.esigner.test.TC_3_AddUser"/>
+      <class name="com.esigner.test.TC_1_AddCategory"/>
+      <class name="com.esigner.test.TC_2_Upload_SignFile"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

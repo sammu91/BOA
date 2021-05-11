@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="selnium_Practice.WebdriverManager"/>
+<fullyQualifiedTypeName name="selnium_Practice.WebdriverManager_Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="com.sun.org.glassfish.gmbal.Description"/>
+<fullyQualifiedTypeName name="io.qameta.allure.Severity"/>
+<fullyQualifiedTypeName name="io.qameta.allure.SeverityLevel"/>
+<fullyQualifiedTypeName name="io.qameta.allure.Description"/>
+<fullyQualifiedTypeName name="io.qameta.allure.Stories"/>
+<fullyQualifiedTypeName name="io.qameta.allure.Story"/>
+<fullyQualifiedTypeName name="org.apache.poi.util.SystemOutLogger"/>
+<fullyQualifiedTypeName name="io.qameta.allure.Step"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+</qualifiedTypeNameHistroy>
